@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>We've moved — PGH 收金哥</title>
+  <meta name="description" content="PGH 收金哥 has a new website. Visit us at pghuiux.github.io/PGH-Group-Webisite for gold buyback, trading and valuation in Malaysia.">
+
+  <!-- ===== SET YOUR NEW DOMAIN: find & replace  https://pghuiux.github.io/PGH-Group-Webisite  (3 places in this file) ===== -->
+  <link rel="canonical" href="https://pghuiux.github.io/PGH-Group-Webisite/">
+  <meta http-equiv="refresh" content="12;url=https://pghuiux.github.io/PGH-Group-Webisite/">
+  <meta property="og:title" content="PGH 收金哥 has moved">
+  <meta property="og:description" content="Our new website is at pghuiux.github.io/PGH-Group-Webisite">
+  <meta property="og:url" content="https://pghuiux.github.io/PGH-Group-Webisite/">
+  <link rel="icon" href="assets/logo.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300..700&family=Tenor+Sans&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --gold:#C8A96A; --gold-d:#A8843F; --gold-l:#F3DE9E;
+      --navy:#0B1B3F; --deep:#050B18; --mid:#0F2147;
+      --ease:cubic-bezier(0.22,1,0.36,1);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:'DM Sans','Noto Sans SC',sans-serif;color:#fff;
+      background:radial-gradient(ellipse at 50% 35%, var(--mid) 0%, var(--deep) 72%);
+      min-height:100vh;min-height:100dvh;display:flex;align-items:center;justify-content:center;
+      padding:24px;overflow-x:hidden;position:relative;-webkit-font-smoothing:antialiased;
+    }
+    /* soft gold glow + hairline frame */
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;
+      background:radial-gradient(circle at 50% 18%, rgba(200,169,106,.16), transparent 46%)}
+    .lang{position:fixed;top:20px;right:20px;z-index:3;display:flex;gap:4px;padding:4px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+    .lang button{font:600 12px/1 'DM Sans',sans-serif;letter-spacing:1px;color:#fff;opacity:.7;background:none;border:0;border-radius:999px;padding:9px 14px;cursor:pointer;transition:all .3s var(--ease)}
+    .lang button.on{background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--navy);opacity:1}
+
+    .card{position:relative;z-index:2;width:min(640px,100%);text-align:center;padding:56px 40px 44px;border-radius:22px;
+      border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);
+      -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+      box-shadow:0 30px 60px -30px rgba(0,0,0,.7);
+      opacity:0;transform:translateY(24px);animation:in 1s var(--ease) .1s forwards}
+    @keyframes in{to{opacity:1;transform:none}}
+    .logo{height:46px;width:auto;display:block;margin:0 auto 34px}
+    .tag{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}
+    .tag i{display:block;width:40px;height:1px;background:var(--gold)}
+    h1{margin:22px 0 14px;font-family:'Tenor Sans','Noto Sans SC',sans-serif;font-weight:400;font-size:clamp(34px,7vw,52px);line-height:1.1}
+    h1 em{font-style:normal;color:var(--gold)}
+    p.lead{font-size:16px;line-height:28px;color:rgba(255,255,255,.75);max-width:460px;margin:0 auto}
+
+    .dom{display:inline-flex;align-items:center;gap:10px;margin:30px 0 28px;padding:12px 22px;border-radius:999px;
+      border:1px solid rgba(200,169,106,.55);background:rgba(200,169,106,.08);
+      font-weight:600;font-size:15px;letter-spacing:.3px;color:var(--gold-l);word-break:break-all}
+    .dom svg{flex:none}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 34px;border-radius:999px;text-decoration:none;
+      font:700 13px/1 'DM Sans',sans-serif;letter-spacing:1.6px;text-transform:uppercase;color:var(--navy);
+      background:linear-gradient(135deg,var(--gold-l),var(--gold) 55%,var(--gold-d));
+      box-shadow:0 12px 30px -12px var(--gold);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 16px 36px -10px var(--gold)}
+    .btn svg{transition:transform .3s var(--ease)}.btn:hover svg{transform:translateX(4px)}
+
+    .count{margin:28px auto 0;max-width:260px}
+    .track{height:1px;background:rgba(255,255,255,.16);overflow:hidden}
+    .fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-l));transform-origin:left;transform:scaleX(0);animation:fill 12s linear .2s forwards}
+    @keyframes fill{to{transform:scaleX(1)}}
+    .count small{display:block;margin-top:12px;font-size:12px;letter-spacing:1px;color:rgba(255,255,255,.55)}
+    .stay{margin-top:26px;font-size:12px;color:rgba(255,255,255,.5)}
+    .stay a{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(200,169,106,.4)}
+    [data-zh]{display:none}
+    html.zh [data-en]{display:none}html.zh [data-zh]{display:revert}
+    html.zh .tag,html.zh .btn,html.zh h1,html.zh .lead,html.zh .count small,html.zh .stay{letter-spacing:.5px}
+    @media (max-width:520px){.card{padding:44px 22px 34px}.dom{font-size:14px}.lang{top:14px;right:14px}}
+    @media (prefers-reduced-motion:reduce){.card{animation:none;opacity:1;transform:none}.fill{animation:none;transform:scaleX(1)}}
+  </style>
+</head>
+<body>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-l="en" class="on">EN</button>
+    <button type="button" data-l="zh">中文</button>
+  </div>
+
+  <main class="card">
+    <img class="logo" src="assets/logo.webp" alt="PGH 收金哥 — PGH Group Trading Sdn. Bhd.">
+    <div class="tag"><i></i><span data-en>We've moved</span><span data-zh>我们搬家了</span><i></i></div>
+    <h1><span data-en>Our <em>new website</em> is live</span><span data-zh>全新<em>官方网站</em>已上线</span></h1>
+    <p class="lead">
+      <span data-en>PGH 收金哥 now lives at a new address. Fair value for every gram — same trusted team, better experience.</span>
+      <span data-zh>PGH 收金哥 已迁移到新网址。每一克都值得公道价格 — 同一支值得信赖的团队，更好的体验。</span>
+    </p>
+
+    <div class="dom">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg>
+      <span>pghuiux.github.io/PGH-Group-Webisite</span>
+    </div>
+    <div>
+      <a class="btn" id="go" href="https://pghuiux.github.io/PGH-Group-Webisite/">
+        <span data-en>Visit new website</span><span data-zh>前往新网站</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <div class="count">
+      <div class="track"><div class="fill"></div></div>
+      <small><span data-en>Taking you there in <b id="n">12</b>s…</span><span data-zh><b id="n2">12</b> 秒后自动跳转…</span></small>
+    </div>
+    <p class="stay">
+      <span data-en>Please update your bookmarks. <a href="#" id="stop">Stay on this page</a></span>
+      <span data-zh>请更新您的书签。<a href="#" id="stop2">留在此页</a></span>
+    </p>
+  </main>
+  <noscript><style>.fill{animation:none;transform:scaleX(1)}</style></noscript>
+
+  <script>
+    (function () {
+      var NEW_URL = 'https://pghuiux.github.io/PGH-Group-Webisite/';   // <- same address as the 3 places in <head>
+      var secs = 12, stopped = false;
+      var n = document.getElementById('n'), n2 = document.getElementById('n2');
+      var root = document.documentElement;
+      function setLang(l) {
+        root.classList.toggle('zh', l === 'zh'); root.lang = l === 'zh' ? 'zh-CN' : 'en';
+        [].forEach.call(document.querySelectorAll('.lang button'), function (b) { b.classList.toggle('on', b.getAttribute('data-l') === l); });
+        try { localStorage.setItem('pgh-l', l); } catch (e) {}
+      }
+      var saved = ''; try { saved = localStorage.getItem('pgh-l') || ''; } catch (e) {}
+      setLang(saved || (/^zh/i.test(navigator.language || '') ? 'zh' : 'en'));
+      [].forEach.call(document.querySelectorAll('.lang button'), function (b) { b.addEventListener('click', function () { setLang(b.getAttribute('data-l')); }); });
+
+      var t = setInterval(function () {
+        if (stopped) return;
+        secs--; n.textContent = n2.textContent = Math.max(secs, 0);
+        if (secs <= 0) { clearInterval(t); location.replace(NEW_URL); }
+      }, 1000);
+      function stop(e) { e.preventDefault(); stopped = true; clearInterval(t); document.querySelector('.count').style.visibility = 'hidden'; document.querySelector('meta[http-equiv=refresh]').remove(); }
+      document.getElementById('stop').addEventListener('click', stop);
+      document.getElementById('stop2').addEventListener('click', stop);
+    })();
+  </script>
+</body>
+</html>
